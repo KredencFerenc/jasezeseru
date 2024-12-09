@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nejoblíbenější Film</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-page" class="container">
+        <h1>Nejoblíbenější film</h1>
+        <p id="favorite-movie-text">Žádný film nebyl nastaven.</p>
+        <button onclick="showSettingsPage()">Nastavit film</button>
+    </div>
+
+    <div id="settings-page" class="container hidden">
+        <h1>Nastavit nejoblíbenější film</h1>
+        <input type="text" id="movie-input" placeholder="Zadejte název filmu">
+        <button onclick="saveMovie()">Uložit</button>
+        <button onclick="showMainPage()">Zpět</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

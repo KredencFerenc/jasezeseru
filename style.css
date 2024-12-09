@@ -1,0 +1,89 @@
+/* Obecný styl pro tělo stránky */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Kontejner pro zarovnání obsahu */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Skrytí sekcí pomocí třídy hidden */
+.hidden {
+    display: none;
+}
+
+/* Nadpisy */
+h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Odstavec s textem oblíbeného filmu */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styl pro tlačítka */
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Styl tlačítek při najetí myší */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl pro vstupní pole */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Pro mobilní zařízení */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
