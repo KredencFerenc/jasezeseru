@@ -1,89 +1,92 @@
-/* Obecný styl pro tělo stránky */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Kontejner pro zarovnání obsahu */
 .container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     max-width: 400px;
-    margin: 50px auto;
+    width: 90%;
+    margin: 20px;
     padding: 20px;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-/* Skrytí sekcí pomocí třídy hidden */
 .hidden {
     display: none;
 }
 
-/* Nadpisy */
 h1 {
     font-size: 24px;
-    color: #444;
+    font-weight: bold;
+    color: #ffeb3b;
     margin-bottom: 20px;
 }
 
-/* Odstavec s textem oblíbeného filmu */
 p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
-/* Styl pro tlačítka */
 button {
     display: inline-block;
     margin: 10px;
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #007bff;
+    color: #fff;
+    background: linear-gradient(135deg, #ff5733, #c70039);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, background 0.3s;
 }
 
-/* Styl tlačítek při najetí myší */
 button:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #c70039, #900c3f);
 }
 
-/* Styl pro vstupní pole */
 input[type="text"] {
     width: calc(100% - 20px);
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #fff;
     border-radius: 5px;
     margin-bottom: 20px;
+    background: transparent;
+    color: #fff;
+    outline: none;
     box-sizing: border-box;
 }
 
-/* Pro mobilní zařízení */
+input[type="text"]:focus {
+    border-color: #ffeb3b;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 600px) {
-    .container {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-
     h1 {
         font-size: 20px;
     }
 
     p {
         font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
     }
 }
